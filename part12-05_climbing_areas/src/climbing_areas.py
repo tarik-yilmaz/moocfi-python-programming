@@ -43,48 +43,31 @@ def sort_by_most_difficult(areas: list):
     return sorted(areas, key=by_grade, reverse=True)
 
 if __name__ == "__main__":
-    ...
-    # ca1 = ClimbingArea("Olhava")
-    # ca1.add_route(ClimbingRoute("Edge", 38, "6A+"))
-    # ca1.add_route(ClimbingRoute("Great cut", 36, "6B"))
-    # ca1.add_route(ClimbingRoute("Swedish route", 42, "5+"))
+    ca1 = ClimbingArea("Olhava")
+    ca1.add_route(ClimbingRoute("Edge", 38, "6A+"))
+    ca1.add_route(ClimbingRoute("Great cut", 36, "6B"))
+    ca1.add_route(ClimbingRoute("Swedish route", 42, "5+"))
 
-    # ca2 = ClimbingArea("Nummi")
-    # ca2.add_route(ClimbingRoute("Synchro", 14, "8C+"))
+    ca2 = ClimbingArea("Nummi")
+    ca2.add_route(ClimbingRoute("Synchro", 14, "8C+"))
 
-    # ca3 = ClimbingArea("Nalkkila slab")
-    # ca3.add_route(ClimbingRoute("Small steps", 12, "6A+"))
-    # ca3.add_route(ClimbingRoute("Smooth operator", 11, "7A"))
-    # ca3.add_route(ClimbingRoute("Piggy not likey", 12 , "6B+"))
-    # ca3.add_route(ClimbingRoute("Orchard", 8, "6A"))
+    ca3 = ClimbingArea("Nalkkila slab")
+    ca3.add_route(ClimbingRoute("Small steps", 12, "6A+"))
+    ca3.add_route(ClimbingRoute("Smooth operator", 11, "7A"))
+    ca3.add_route(ClimbingRoute("Piggy not likey", 12 , "6B+"))
+    ca3.add_route(ClimbingRoute("Orchard", 8, "6A"))
 
-    # print(ca1)
-    # print(ca3.name, ca3.routes())
-    # print(ca3.hardest_route())
-    # # Test of Part 1
-    # # ca1, ca2 and ca3 declared as above
-    # areas = [ca1, ca2, ca3]
-    # for area in sort_by_number_of_routes(areas):
-    #     print(area)
+    print(ca1)
+    print(ca3.name, ca3.routes())
+    print(ca3.hardest_route())
+    # Test of Part 1
+    # ca1, ca2 and ca3 declared as above
+    areas = [ca1, ca2, ca3]
+    for area in sort_by_number_of_routes(areas):
+        print(area)
 
-    # # Test of Part 2
-    # # ca1, ca2 and ca3 declared as above
-    # areas = [ca1, ca2, ca3]
-    # for area in sort_by_most_difficult(areas):
-    #     print(area)
-
-    k1 = ClimbingArea("Area 53")
-    k1.add_route(ClimbingRoute("Edge", 38, "6A+"))
-    k1.add_route(ClimbingRoute("Big cut", 36, "6B"))
-    k1.add_route(ClimbingRoute("The Swedish route", 42, "5+"))
-
-    k2 = ClimbingArea("Moor")
-    k2.add_route(ClimbingRoute("Syncro", 14, "8C+"))
-
-    k3 = ClimbingArea("Climbstation")
-    k3.add_route(ClimbingRoute("Small steps", 12, "6A+"))
-    k3.add_route(ClimbingRoute("Smooth operator", 11, "7A"))
-    k3.add_route(ClimbingRoute("No grip", 12 , "6B+"))
-    k3.add_route(ClimbingRoute("Fruit garden", 8, "6A"))
-
-    sort_by_most_difficult([k1, k2, k3])
+    # Test of Part 2
+    # ca1, ca2 and ca3 declared as above
+    areas = [ca1, ca2, ca3]
+    for area in sort_by_most_difficult(areas):
+        print(area)
