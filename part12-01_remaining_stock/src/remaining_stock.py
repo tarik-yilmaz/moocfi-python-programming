@@ -11,3 +11,4 @@ if __name__ == "__main__":
 
     for product in sort_by_remaining_stock(products):
         print(f"{product[0]} {product[2]} pcs")
+        
