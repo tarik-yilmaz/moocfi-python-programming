@@ -71,3 +71,4 @@ if __name__ == "__main__":
     areas = [ca1, ca2, ca3]
     for area in sort_by_most_difficult(areas):
         print(area)
+        
