@@ -46,3 +46,4 @@ if __name__ == "__main__":
     routes = [r1, r2, r3, r4]
     for route in sort_by_difficulty(routes):
         print(route)
+        
