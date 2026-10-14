@@ -12,3 +12,4 @@ if __name__ == "__main__":
     print("Rating according to IMDB")
     for show in sort_by_ratings(shows):
         print(f"{show['name']}  {show['rating']}")
+        
